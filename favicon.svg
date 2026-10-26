@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A21"/>
+      <stop offset="100%" stop-color="#0A0A0C"/>
+    </linearGradient>
+    <linearGradient id="l" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D63"/>
+      <stop offset="100%" stop-color="#A30A22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fundo em chip angular (cantos cortados), igual ao brand-chip do site -->
+  <polygon points="10,4 64,4 64,50 50,64 0,64 0,18" fill="url(#bg)"/>
+
+  <!-- L estilizado -->
+  <path d="M22 14 H30 V42 H46 V50 H22 Z" fill="#FFFFFF"/>
+
+  <!-- ponto vermelho característico da marca -->
+  <circle cx="48" cy="18" r="6" fill="url(#l)"/>
+</svg>

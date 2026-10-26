@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenmel | Consultoria Empresarial e Tributária</title>
+  <meta name="description"
+    content="Gestão e estratégia para empresas que querem melhorar os resultados. Consultoria empresarial e tributária orientada a dados.">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================================================
+     HEADER — fixo, angular, estilo "console"
+     ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Lenmel"><span class="brand-logo">LENMEL<i></i></span></a>
+      <nav class="main-nav">
+        <a href="#inicio" class="nav-link">// início</a>
+        <a href="solucoes.html" class="nav-link">// soluções</a>
+        <a href="#metodo" class="nav-link">// método</a>
+        <a href="#resultados" class="nav-link">// resultados</a>
+        <a href="#sobre" class="nav-link">// sobre</a>
+      </nav>
+      <a href="#contato" class="btn btn-primary header-cta js-open-specialist">Fale com um especialista</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#inicio" class="nav-link" style="--i:0">Início</a>
+    <a href="#problemas" class="nav-link" style="--i:1">Problemas</a>
+    <a href="solucoes.html" class="nav-link" style="--i:2">Soluções</a>
+    <a href="#metodo" class="nav-link" style="--i:3">Método</a>
+    <a href="#resultados" class="nav-link" style="--i:4">Resultados</a>
+    <a href="#sobre" class="nav-link" style="--i:5">Sobre</a>
+    <a href="#contato" class="btn btn-primary mobile-cta js-open-specialist" style="--i:6">Fale com um especialista</a>
+  </div>
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+
+  <!-- Indicador lateral de seção (estilo "console" gamer) -->
+  <nav class="side-dots" aria-hidden="true">
+    <a href="#inicio" data-label="Início"></a>
+    <a href="#problemas" data-label="Problemas"></a>
+    <a href="#solucoes" data-label="Soluções"></a>
+    <a href="#metodo" data-label="Método"></a>
+    <a href="#resultados" data-label="Resultados"></a>
+    <a href="#sobre" data-label="Sobre"></a>
+    <a href="#contato" data-label="Contato"></a>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+     HERO — tipografia gigante, corte diagonal, glow neon vermelho
+     ============================================================ -->
+    <section class="hero" id="inicio">
+      <div class="hero-diagonal" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <span class="tagline reveal">
+          <span class="tagline-bracket">[</span>
+          CONSULTORIA EMPRESARIAL &amp; TRIBUTÁRIA
+          <span class="tagline-bracket">]</span>
+        </span>
+
+        <h1 class="hero-title reveal">
+          <span class="line">GESTÃO E</span>
+          <span class="line line-outline">ESTRATÉGIA</span>
+          <span class="line">PARA QUEM QUER</span>
+          <span class="line line-accent">MAIS <span class="glitch" data-text="RESULTADO">RESULTADO</span></span>
+        </h1>
+
+        <div class="hero-foot reveal reveal-delay-1">
+          <p class="hero-lede">
+            Entramos na operação da sua empresa em duas frentes — <strong>gestão
+              empresarial</strong> e <strong>estratégia fiscal e tributária</strong> — para
+            identificar onde estão os problemas e as oportunidades. E não paramos
+            aí: ajudamos a implementar as soluções.
+          </p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary btn-lg magnetic js-open-specialist">
+              <span>Fale com um especialista</span>
+              <svg viewBox="0 0 24 24" class="icon-arrow">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a href="solucoes.html" class="btn btn-outline btn-lg magnetic">Conheça as soluções</a>
+          </div>
+        </div>
+
+        <div class="hero-stats reveal reveal-delay-2">
+          <div class="stat">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">Frentes de atuação</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">Etapas de método</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num-row"><span class="stat-num" data-count="10">0</span><span
+                class="stat-suffix">+</span></span>
+            <span class="stat-label">Anos de experiência</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="1">0</span>
+            <span class="stat-label">Dia útil de retorno</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>GESTÃO EMPRESARIAL</span><span>•</span>
+          <span>PLANEJAMENTO TRIBUTÁRIO</span><span>•</span>
+          <span>RECUPERAÇÃO DE CRÉDITOS</span><span>•</span>
+          <span>REFORMA TRIBUTÁRIA</span><span>•</span>
+          <span>EFICIÊNCIA OPERACIONAL</span><span>•</span>
+          <span>GESTÃO EMPRESARIAL</span><span>•</span>
+          <span>PLANEJAMENTO TRIBUTÁRIO</span><span>•</span>
+          <span>RECUPERAÇÃO DE CRÉDITOS</span><span>•</span>
+          <span>REFORMA TRIBUTÁRIA</span><span>•</span>
+          <span>EFICIÊNCIA OPERACIONAL</span><span>•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     PROBLEMAS — bento grid assimétrico
+     ============================================================ -->
+    <section class="section" id="problemas">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><i></i>Problemas que resolvemos</span>
+          <h2>Algum desses cenários<br><span class="text-outline">parece familiar?</span></h2>
+        </div>
+
+        <div class="bento reveal-group">
+          <article class="bento-card bento-lg reveal">
+            <div class="bento-index">01</div>
+            <span class="card-icon"><svg viewBox="0 0 24 24">
+                <path d="M3 7h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
+                <path d="M3 7l3-4h12l3 4" />
+              </svg></span>
+            <h3>Custos e despesas crescem sem explicação</h3>
+            <p>O resultado aperta, mas ninguém consegue dizer com precisão onde o dinheiro está indo — nem por quê.</p>
+          </article>
+
+          <article class="bento-card reveal">
+            <div class="bento-index">02</div>
+            <span class="card-icon"><svg viewBox="0 0 24 24">
+                <circle cx="7" cy="7" r="3" />
+                <circle cx="17" cy="17" r="3" />
+                <path d="M9 9l6 6" />
+              </svg></span>
+            <h3>Processos ineficientes</h3>
+            <p>Retrabalho, prazos perdidos e esforço que não vira resultado.</p>
+          </article>
+
+          <article class="bento-card reveal">
+            <div class="bento-index">03</div>
+            <span class="card-icon"><svg viewBox="0 0 24 24">
+                <path d="M4 20V10M12 20V4M20 20v-7" />
+              </svg></span>
+            <h3>Decisões sem dados confiáveis</h3>
+            <p>A gestão navega por intuição — e o erro só aparece quando já custou caro.</p>
+          </article>
+
+          <article class="bento-card bento-accent reveal">
+            <div class="bento-index">04</div>
+            <span class="card-icon"><svg viewBox="0 0 24 24">
+                <circle cx="8" cy="12" r="5" />
+                <circle cx="16" cy="12" r="5" />
+              </svg></span>
+            <h3>Créditos tributários na mesa</h3>
+            <p>Bitributação e oportunidades de recuperação nunca mapeadas.</p>
+          </article>
+
+          <article class="bento-card reveal">
+            <div class="bento-index">05</div>
+            <span class="card-icon"><svg viewBox="0 0 24 24">
+                <path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5Z" />
+              </svg></span>
+            <h3>Riscos fiscais</h3>
+            <p>Obrigações mal acompanhadas viram passivo, multa e surpresa.</p>
+          </article>
+
+          <article class="bento-card bento-lg reveal">
+            <div class="bento-index">06</div>
+            <span class="card-icon"><svg viewBox="0 0 24 24">
+                <path d="M3 21V9l9-6 9 6v12" />
+                <path d="M9 21v-6h6v6" />
+              </svg></span>
+            <h3>Reforma Tributária chegando sem preparo</h3>
+            <p>As mudanças no horizonte afetam preço, operação e tributos — e poucas empresas estão prontas para elas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SOLUÇÕES — painéis estilo "cartucho" com toggle
+     ============================================================ -->
+    <section class="section section-dark" id="solucoes">
+      <div class="dark-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow-light"><i></i>Nossas soluções</span>
+          <h2 class="text-light">Soluções para gestão,<br><span class="text-accent-glow">custos e tributos</span></h2>
+          <p class="text-muted-light">Custo, processo e imposto não podem ser tratados em ilhas. Conheça as soluções que a Lenmel coloca à disposição da sua empresa.</p>
+        </div>
+        <div class="panels reveal-group">
+          <article class="panel reveal">
+            <div class="panel-glow"></div>
+            <div class="panel-head">
+              <span class="panel-tag">ÁREA // 01</span>
+              <h3>Gestão Empresarial</h3>
+            </div>
+            <p class="panel-lede">Colocamos o planejamento, os processos e os indicadores para trabalhar a favor da operação.</p>
+            <ul class="panel-list">
+              <li><a href="solucao-gestao-matricial-receitas-despesas.html"><strong>Gestão Matricial de Receitas e Despesas</strong><span>Planejamento anual com foco em EBITDA</span></a></li>
+              <li><a href="solucao-gestao-orcamentaria.html"><strong>Gestão Orçamentária</strong><span>Decisões rápidas com foco no essencial</span></a></li>
+              <li><a href="solucao-indicadores-eficiencia-operacional.html"><strong>Indicadores e Eficiência Operacional</strong><span>Orçamento Base Zero e mapeamento de processos (BPM)</span></a></li>
+              <li><a href="solucao-experiencia-do-cliente.html"><strong>Experiência do Cliente</strong><span>Jornada monitorada ponta a ponta</span></a></li>
+            </ul>
+            <a href="solucoes.html#gestao-empresarial" class="link-arrow">Ver soluções da área <svg viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg></a>
+          </article>
+
+          <article class="panel panel-red reveal">
+            <div class="panel-glow"></div>
+            <div class="panel-head">
+              <span class="panel-tag">ÁREA // 02</span>
+              <h3>Fiscal & Tributário</h3>
+            </div>
+            <p class="panel-lede">Transformamos a área fiscal em fonte de resultado: pagamos o devido e recuperamos o que foi pago a mais.</p>
+            <ul class="panel-list">
+              <li><a href="solucao-planejamento-tributario.html"><strong>Planejamento Tributário</strong><span>Segurança jurídica e visão de longo prazo</span></a></li>
+              <li><a href="solucao-recuperacao-tributos-creditos.html"><strong>Recuperação de Tributos e Créditos</strong><span>Identificação de bitributação</span></a></li>
+              <li><a href="solucao-revisao-fiscal-compensacao.html"><strong>Revisão Fiscal e Compensação</strong><span>Correção de inconsistências mensais</span></a></li>
+              <li><a href="solucao-compliance-contabil-fiscal.html"><strong>Compliance Contábil-Fiscal</strong><span>Adequação às normas vigentes</span></a></li>
+              <li><a href="solucao-reforma-tributaria.html"><strong>Reforma Tributária</strong><span>Preparo para a nova realidade</span></a></li>
+            </ul>
+            <a href="solucoes.html#fiscal-tributario" class="link-arrow">Ver soluções da área <svg viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg></a>
+          </article>
+
+        </div>
+        <div class="section-cta reveal"><a href="solucoes.html" class="btn btn-primary btn-lg magnetic">Ver todas as soluções</a></div>
+        <div class="custom-solution reveal">
+          <span class="card-icon card-icon-light"><svg viewBox="0 0 24 24"><path d="M9 3h6v4h4v6h-4v4H9v-4H5V7h4Z" /></svg></span>
+          <div class="custom-solution-copy">
+            <h3>Soluções customizadas</h3>
+            <p>Construímos respostas para desafios atuais e futuros considerando a história, os objetivos, os processos, o mercado e a cultura de cada cliente.</p>
+          </div>
+          <a href="#contato" class="btn btn-outline-light custom-solution-cta js-open-specialist">Quero uma solução sob medida <svg viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" /></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     MÉTODO — trilho horizontal com scroll snap
+     ============================================================ -->
+    <section class="section" id="metodo">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><i></i>Nossa metodologia</span>
+          <h2>Do diagnóstico ao<br><span class="text-outline">resultado, com método</span></h2>
+          <p>Nossa atuação não termina quando o problema é identificado: acompanhamos a implementação até os resultados
+            entrarem no seu dia a dia.</p>
+        </div>
+
+        <ol class="method-rail reveal-group">
+          <li class="method-step reveal"><span class="method-num">01</span>
+            <h3>Diagnosticar</h3>
+            <p>Entramos na operação para entender o cenário real.</p>
+          </li>
+          <li class="method-step reveal"><span class="method-num">02</span>
+            <h3>Analisar</h3>
+            <p>Transformamos dados em diagnóstico.</p>
+          </li>
+          <li class="method-step reveal"><span class="method-num">03</span>
+            <h3>Priorizar</h3>
+            <p>Ordenamos as ações pelo maior impacto.</p>
+          </li>
+          <li class="method-step reveal"><span class="method-num">04</span>
+            <h3>Implementar</h3>
+            <p>Apoiamos a execução na prática.</p>
+          </li>
+          <li class="method-step reveal"><span class="method-num">05</span>
+            <h3>Acompanhar</h3>
+            <p>Monitoramos e corrigimos a rota.</p>
+          </li>
+          <li class="method-step method-step-final reveal"><span class="method-num">06</span>
+            <h3>Gerar resultado</h3>
+            <p>Mais EBITDA, menos custo, decisões com dados.</p>
+          </li>
+        </ol>
+
+        <div class="timeline-cta reveal">
+          <a href="#contato" class="btn btn-primary magnetic">Começar pelo diagnóstico</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     RESULTADOS & CASES
+     ============================================================ -->
+    <section class="section section-tint" id="resultados">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><i></i>Resultados</span>
+          <h2>Cada projeto com meta,<br><span class="text-outline">indicador e resultado medido</span></h2>
+          <p>Definimos metas e indicadores no início de cada projeto e acompanhamos a evolução até o resultado aparecer.</p>
+        </div>
+        <div class="indicators-card reveal">
+          <span class="eyebrow eyebrow-light"><i></i>Indicadores que guiam cada projeto</span>
+          <ul class="pill-tags">
+            <li>EBITDA</li>
+            <li>Redução de custos</li>
+            <li>Eficiência operacional</li>
+            <li>Conversão de vendas</li>
+            <li>Retenção de clientes</li>
+            <li>Recuperação de créditos</li>
+            <li>Carga tributária</li>
+            <li>Fluxo de caixa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     POR QUE A LENMEL — lista com número gigante em outline
+     ============================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><i></i>Por que a Lenmel</span>
+          <h2>Quem você contrata importa tanto quanto<br><span class="text-outline">o que você implementa</span></h2>
+        </div>
+
+        <div class="why-list reveal-group">
+          <div class="why-row reveal"><span class="why-num">01</span>
+            <div>
+              <h3>Especialistas à frente de cada projeto</h3>
+              <p>Quem faz o diagnóstico também apoia a implementação, do primeiro levantamento ao resultado.</p>
+            </div>
+          </div>
+          <div class="why-row reveal"><span class="why-num">02</span>
+            <div>
+              <h3>Visão integrada: gestão + tributário</h3>
+              <p>Custo, processo e imposto tratados juntos. É nessa interseção que o resultado aparece.</p>
+            </div>
+          </div>
+          <div class="why-row reveal"><span class="why-num">03</span>
+            <div>
+              <h3>Análise orientada a dados</h3>
+              <p>Quem não mede não gerencia. Tudo parte de números e fatos da sua operação.</p>
+            </div>
+          </div>
+          <div class="why-row reveal"><span class="why-num">04</span>
+            <div>
+              <h3>Próximos da operação</h3>
+              <p>Acompanhamos a implementação com os seus times — relatório sem ação não muda resultado.</p>
+            </div>
+          </div>
+          <div class="why-row reveal"><span class="why-num">05</span>
+            <div>
+              <h3>Foco em resultado mensurável</h3>
+              <p>Metas claras desde o início: mais EBITDA, menos custo, créditos recuperados.</p>
+            </div>
+          </div>
+          <div class="why-row reveal"><span class="why-num">06</span>
+            <div>
+              <h3>Acompanhamento contínuo</h3>
+              <p>Monitoramos indicadores e resultados, ajustando a rota sempre que necessário.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SOBRE / EQUIPE
+     ============================================================ -->
+    <section class="section section-dark" id="sobre">
+      <div class="dark-glow dark-glow-alt" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow-light"><i></i>Sobre a Lenmel</span>
+          <h2 class="text-light">Construímos negócios<br><span class="text-accent-glow">sustentáveis e lucrativos</span>
+          </h2>
+          <p class="text-muted-light">Somos uma consultoria que une conhecimento técnico em gestão e em tributação.
+            Pensamos com método, trabalhamos com dados e atuamos perto da operação.</p>
+        </div>
+
+        <div class="grid grid-2 reveal-group">
+          <article class="team-card reveal">
+            <div class="team-card-head">
+              <img class="avatar" src="erickletra.png" alt="Erick Lenner">
+              <div><h3>Erick Lenner</h3><span class="team-role">Contador · Fiscal e Tributário</span></div>
+            </div>
+            <p>Contador com 10 anos de experiência, bacharel em Ciências Contábeis e Controladoria e Finanças pela UFMG.</p>
+            <p>Experiência consolidada em big four. Especialista em consultoria contábil, tributária e fiscal.</p>
+            <div class="team-card-footer">
+              <div class="team-social"><a href="https://www.linkedin.com/in/ericklenner/" target="_blank" rel="noopener" aria-label="LinkedIn de Erick Lenner"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M7 10v7M7 7v.01M12 17v-4.5a2.5 2.5 0 0 1 5 0V17" /></svg></a></div>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-card-head">
+              <img class="avatar" src="marcela-melgaco.png" alt="Marcela Melgaço">
+              <div><h3>Marcela Melgaço</h3><span class="team-role">Consultora de gestão · Gestão Empresarial</span></div>
+            </div>
+            <p>Consultora de gestão com mais de 10 anos de experiência, MBA em Finanças pela PUC-MG e bacharel em Controladoria e Finanças pela UFMG.</p>
+            <p>Lidera equipes especializadas em Orçamento Base Zero, gestão de receita e despesa e mapeamento de processos (BPM).</p>
+            <div class="team-card-footer">
+              <div class="team-social"><a href="https://www.linkedin.com/in/marcelamelgaco/" target="_blank" rel="noopener" aria-label="LinkedIn de Marcela Melgaço"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M7 10v7M7 7v.01M12 17v-4.5a2.5 2.5 0 0 1 5 0V17" /></svg></a></div>
+            </div>
+          </article>
+        </div>
+
+        <blockquote class="quote-block reveal">“Em cada projeto, o aprendizado é mútuo e o conhecimento é sempre
+          compartilhado — assim, garantimos autonomia e sustentabilidade para o seu negócio.”</blockquote>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     CTA FAIXA
+     ============================================================ -->
+    <section class="cta-band reveal">
+      <div class="cta-band-diagonal" aria-hidden="true"></div>
+      <div class="container cta-band-inner">
+        <h2>Sua empresa sabe onde está<br>perdendo dinheiro?</h2>
+        <p>Vamos identificar as oportunidades juntos — começando por uma conversa com nossos especialistas.</p>
+        <a href="#contato" class="btn btn-light btn-lg magnetic js-open-specialist">Fale com um especialista
+          <svg viewBox="0 0 24 24" class="icon-arrow">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+        <span class="cta-band-note">Sem compromisso · Resposta em até 1 dia útil</span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     CONTATO
+     ============================================================ -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><i></i>Contato</span>
+          <h2>Vamos conversar sobre<br><span class="text-outline">o resultado da sua empresa?</span></h2>
+          <p>Conte seu principal desafio. Nossa equipe de especialistas retorna em até 1 dia útil.</p>
+        </div>
+
+        <div class="contact-grid reveal-group">
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <h3>Conte seu desafio</h3>
+            <p class="contact-form-sub">Retorno em até 1 dia útil, pelo WhatsApp.</p>
+            <div class="form-row">
+              <div class="form-field"><label for="field-nome">Nome *</label><input type="text" id="field-nome" name="nome" placeholder="Seu nome" required></div>
+              <div class="form-field"><label for="field-empresa">Empresa</label><input type="text" id="field-empresa" name="empresa" placeholder="Nome da empresa"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-field"><label for="field-email">E-mail *</label><input type="email" id="field-email" name="email" placeholder="voce@empresa.com.br" required></div>
+              <div class="form-field"><label for="field-whatsapp">WhatsApp</label><input type="tel" id="field-whatsapp" name="whatsapp" placeholder="(00) 00000-0000"></div>
+            </div>
+            <div class="form-field"><label for="field-area">Área de interesse</label>
+              <select id="field-area" name="area">
+                <option value="">Selecione</option>
+                <option>Gestão Empresarial</option>
+                <option>Fiscal &amp; Tributário</option>
+                <option>Reforma Tributária</option>
+                <option>Outro assunto</option>
+              </select></div>
+            <div class="form-field"><label for="field-desafio">Principal desafio *</label><textarea id="field-desafio" name="desafio" rows="4" placeholder="Ex.: os custos crescem sem a gente saber onde está o problema..." required></textarea></div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <svg viewBox="0 0 24 24"><path d="m3 11 18-8-8 18-2-8Z" /></svg>
+              Quero falar com um especialista
+            </button>
+            <p class="form-footnote">Ao enviar, sua mensagem abre no WhatsApp da Lenmel.</p>
+          </form>
+
+          <aside class="contact-aside reveal">
+            <div class="contact-person">
+              <span class="avatar" aria-hidden="true">L</span>
+              <div>
+                <strong>Atendimento Lenmel</strong><span class="team-role">Consultoria empresarial e tributária</span>
+                <div class="team-social">
+                  <a href="mailto:lenmel@lenmel.com.br" aria-label="E-mail"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4Z" /><path d="m4 6 8 7 8-7" /></svg></a>
+                  <a href="https://wa.me/5531984670445?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lenmel%20e%20gostaria%20de%20pedir%20uma%20informa%C3%A7%C3%A3o%21" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg></a>
+                  <span>+55 31 98467-0445</span>
+                  <span>lenmel@lenmel.com.br</span>
+                </div>
+              </div>
+            </div>
+            <ul class="contact-badges">
+              <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>Resposta em até 1 dia útil</li>
+              <li><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5Z" /></svg>Diagnóstico sem compromisso</li>
+              <li><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 4-6 8-6s8 2 8 6" /></svg>Atendimento por especialistas</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+     RODAPÉ
+     ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-logo">LENMEL<i></i></span>
+        <p>Consultoria empresarial e tributária para construir negócios sustentáveis e lucrativos.</p>
+        <blockquote class="footer-quote">“Quem não mede não gerencia.”<cite>William Edwards Deming</cite></blockquote>
+      </div>
+      <nav class="footer-nav">
+        <span class="footer-heading">Navegue</span>
+        <ul>
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="#metodo">Método</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contacts">
+        <span class="footer-heading">Fale com a Lenmel</span>
+        <div class="footer-person">
+          <span class="footer-label">Contato:</span>
+          <a href="mailto:lenmel@lenmel.com.br">lenmel@lenmel.com.br</a>
+          <span class="footer-label">WhatsApp:</span>
+          <a href="https://wa.me/5531984670445?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lenmel%20e%20gostaria%20de%20pedir%20uma%20informa%C3%A7%C3%A3o%21" target="_blank" rel="noopener">+55 31 98467-0445</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="footer-year">2026</span> Lenmel · Consultoria empresarial e tributária</span>
+      <span>Belo Horizonte · Minas Gerais</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" /></svg>
+  </button>
+
+  <div class="specialist-modal" id="specialist-modal" aria-hidden="true">
+    <div class="specialist-modal-backdrop" id="specialist-modal-backdrop"></div>
+    <div class="specialist-modal-panel" role="dialog" aria-modal="true" aria-labelledby="specialist-modal-title">
+      <button class="specialist-modal-close" id="specialist-modal-close" aria-label="Fechar">
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <span class="eyebrow specialist-modal-eyebrow"><i></i>Fale com um especialista</span>
+      <h3 id="specialist-modal-title">Sobre qual tema você quer falar?</h3>
+      <p class="specialist-modal-sub">Escolha o tema e a conversa abre direto no WhatsApp da Lenmel.</p>
+      <div class="specialist-cards">
+        <a class="specialist-card" href="https://wa.me/5531984670445?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lenmel%20e%20gostaria%20de%20falar%20sobre%20Gest%C3%A3o%20Empresarial." target="_blank" rel="noopener">
+          <span class="specialist-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>
+          <div class="specialist-card-body"><strong>Gestão Empresarial</strong><span class="specialist-desc">Orçamento, indicadores e eficiência operacional.</span></div>
+          <span class="specialist-card-cta">Chamar no WhatsApp <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+        </a>
+        <a class="specialist-card" href="https://wa.me/5531984670445?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lenmel%20e%20gostaria%20de%20falar%20sobre%20Fiscal%20e%20Tribut%C3%A1rio." target="_blank" rel="noopener">
+          <span class="specialist-icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5Z"/></svg></span>
+          <div class="specialist-card-body"><strong>Fiscal & Tributário</strong><span class="specialist-desc">Planejamento, recuperação de créditos e Reforma Tributária.</span></div>
+          <span class="specialist-card-cta">Chamar no WhatsApp <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+        </a>
+        <a class="specialist-card" href="https://wa.me/5531984670445?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lenmel%20e%20gostaria%20de%20pedir%20uma%20informa%C3%A7%C3%A3o%21" target="_blank" rel="noopener">
+          <span class="specialist-icon"><svg viewBox="0 0 24 24"><path d="M9 3h6v4h4v6h-4v4H9v-4H5V7h4Z"/></svg></span>
+          <div class="specialist-card-body"><strong>Outro assunto</strong><span class="specialist-desc">Conte o seu desafio e direcionamos para o especialista.</span></div>
+          <span class="specialist-card-cta">Chamar no WhatsApp <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
